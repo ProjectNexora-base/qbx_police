@@ -4,7 +4,7 @@ game 'gta5'
 name 'qbx_policejob'
 description 'Police system for Qbox'
 repository 'https://github.com/Qbox-project/qbx_policejob'
-version '1.0.0'
+version '1.0.1'
 
 ox_lib 'locale'
 
@@ -19,6 +19,7 @@ client_scripts {
 }
 
 server_scripts {
+	'server/pn-lib-config.lua',
     '@oxmysql/lib/MySQL.lua',
     'server/*.lua'
 }
